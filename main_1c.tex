@@ -1,0 +1,137 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[hidelinks]{hyperref}
+\usepackage{geometry}
+\geometry{
+  a4paper,
+  left=20mm,
+  right=20mm,
+  bottom=22mm,
+  top=19mm
+}
+\usepackage{emoji}
+\usepackage{fontawesome}
+\usepackage{lastpage}
+\usepackage{orcidlink}
+\usepackage{enumitem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{array}
+\usepackage{tikz}
+\usepackage{censor}
+\usepackage{longtable}
+\setlength{\LTpre}{0pt}
+\setlength{\LTpost}{0pt}
+
+\StopCensoring
+
+\renewcommand*\familydefault{\sfdefault} 
+
+\definecolor{adobered}{HTML}{FF0000}
+\newcommand{\grey}[1]{\textcolor{black!50}{#1}}
+
+\usepackage[sorting=ydnt,defernumbers]{biblatex}
+\renewbibmacro{in:}{}
+\addbibresource{mypapers.bib}
+\setlength\bibitemsep{1\itemsep}
+\setlength\leftmargin{5cm}
+
+
+
+
+\newcommand{\secHeader}[1]{\vspace{1em} \noindent{\Large #1\vspace{-0.3em}
+
+\noindent
+\begin{tikzpicture}
+\draw[color=gray!50, line width=0.6mm] (0,1) -- (0.994\textwidth,1);
+\end{tikzpicture}}\vspace{0.65em}
+}
+
+
+\newcommand{\linktoPdf}[1]{\href{#1}{\textcolor{adobered}{\faFilePdfO}}}
+\newcommand{\itemmark}{\faBookmarkO\hspace{0.5em}}
+
+\newcommand{\linkexternal}[1]{\href{#1}{\textcolor{adobered}{\faExternalLinkSquare}}}
+
+\usepackage{fancyhdr}
+\renewcommand{\headrulewidth}{0pt}
+\pagestyle{fancy}
+\fancyfoot{}
+\fancyhead{}
+\fancyfoot[C]{\grey{Page \thepage\ of \pageref{LastPage}}}
+
+\begin{document}
+
+
+
+
+{\noindent \huge \textcolor{red}{D}hrubajyoti \textcolor{red}{B}iswas, PhD \LARGE \orcidlink{0000-0002-4474-2546} }%
+\vspace{0.35em}
+
+\noindent 
+\grey{Theoretical and computational physicist | Interested in nonlinear dynamical systems, emergent phenomena, \& HPC.}
+\vspace{0.35em}
+
+\noindent
+\faEnvelope\hspace{0.15em} \censor{\href{mailto:dhrubajyoti98@gmail.com}{dhrubajyoti98@gmail.com}}\hspace{0.55em}
+\faPhoneSquare\hspace{0.15em} \censor{\href{tel:+919836705913}{(+91)-9836705913}}\hspace{0.55em}
+\faGlobe\hspace{0.15em} \censor{\href{https://dhrubajyoti98.github.io}{https://dhrubajyoti98.github.io}}\hspace{0.55em} 
+
+
+\secHeader{\emoji{classical-building} \textcolor{red}{E}xperience}
+
+\noindent
+\input{experience}
+
+
+\secHeader{\emoji{notebook} \textcolor{red}{E}ducation}
+
+\noindent
+\input{education}
+
+
+
+
+\secHeader{\emoji{scroll} \textcolor{red}{P}ublications}
+\vspace{-0.25em}
+
+\nocite{*}
+\noindent {\large \textit{Journal Articles}}
+\printbibliography[type=article, title=Articles, heading=none,resetnumbers]
+
+\noindent {\large \textit{Conference Proceedings}}
+\printbibliography[type=inproceedings, title=Conference Proceedings, heading=none, resetnumbers]
+
+\vspace{-1em}
+
+\secHeader{\emoji{world-map} \textcolor{red}{C}onferences \& \textcolor{red}{W}orkshops}
+
+\noindent
+\input{conf_workshops_talks}
+
+
+
+\secHeader{\emoji{bar-chart} \textcolor{red}{M}iscellaneous}
+
+\noindent
+\input{misc}
+
+
+
+
+\secHeader{\emoji{check-mark-button} \textcolor{red}{S}kills}
+
+\noindent
+\input{skills}
+\vspace{3em}
+
+\noindent
+% \begin{tikzpicture}
+% \draw[color=black!50, line width=0.5mm] (0,1) -- (0.7\textwidth,1);
+% \end{tikzpicture}
+%\hfill 
+\hfill \textit{\textcolor{black!30}{Last updated on \today}}
+
+
+
+
+
+\end{document}
