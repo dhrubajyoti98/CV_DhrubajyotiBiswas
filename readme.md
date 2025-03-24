@@ -1,1 +1,1 @@
-This repo contains the files for my CV
+This repo contains the files for my CV.
