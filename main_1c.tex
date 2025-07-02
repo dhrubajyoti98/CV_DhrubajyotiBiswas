@@ -1,0 +1,146 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[verbose]{hyperref}
+\hypersetup{
+    colorlinks = true,
+    citecolor = blue,
+    linkcolor = blue,
+    urlcolor = blue,
+}
+\usepackage{geometry}
+\geometry{
+  a4paper,
+  left=12mm,
+  right=12mm,
+  bottom=10mm,
+  top=10mm
+}
+
+\usepackage{fontawesome}
+
+
+\usepackage{enumitem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{array}
+\usepackage{tikz}
+
+
+\usepackage{longtable}
+\setlength{\LTpre}{0pt}
+\setlength{\LTpost}{0pt}
+
+
+%\renewcommand*\familydefault{\sfdefault} 
+
+\definecolor{adobered}{HTML}{FF0000}
+\definecolor{red}{HTML}{FF0000}
+
+
+\usepackage[sorting=ydnt,defernumbers]{biblatex}
+\renewbibmacro{in:}{}
+\addbibresource{mypapers.bib}
+\setlength\bibitemsep{1\itemsep}
+\setlength\leftmargin{5cm}
+
+
+
+
+\newcommand{\secHeader}[1]{\vspace{1em} \noindent{\large \textsc{#1}\vspace{-0.55em}
+
+\noindent
+\begin{tikzpicture}
+\draw[color=black, line width=0.2mm] (0,1) -- (0.994\textwidth,1);
+\end{tikzpicture}}\vspace{0.3em}
+}
+
+
+\newcommand{\linktoPdf}[1]{\href{#1}{\textcolor{adobered}{\faFilePdfO}}}
+
+
+\newcommand{\linkexternal}[1]{\href{#1}{\textcolor{adobered}{\faExternalLinkSquare}}}
+
+\usepackage{fancyhdr}
+\renewcommand{\headrulewidth}{0pt}
+\pagestyle{fancy}
+\fancyfoot{}
+%\fancyhead{}
+
+
+\begin{document}
+
+
+
+\begin{center}
+\huge {Dhrubajyoti Biswas} %\orcidlink{0000-0002-4474-2546}
+\normalsize
+\vspace{0.35em}
+
+\faEnvelope\hspace{0.15em} \href{mailto:dhrubajyoti98@gmail.com}{dhrubajyoti98@gmail.com}\hspace{0.55em}
+\faPhoneSquare\hspace{0.15em} \href{tel:+919836705913}{(+91)-9836705913}\hspace{0.55em}
+\faGlobe\hspace{0.15em} \href{https://dhrubajyoti98.github.io}{dhrubajyoti98.github.io}\hspace{0.55em} \faLinkedinSquare\hspace{0.15em} \href{https://www.linkedin.com/in/dhrubajyoti-biswas/}{dhrubajyoti-biswas}
+\end{center}
+
+\secHeader{Experience}
+
+\noindent
+\input{experience}
+
+
+\secHeader{Education}
+
+\noindent
+\input{education}
+
+
+
+
+\secHeader{Publications}
+\vspace{-0.2em}
+
+\nocite{*}
+\noindent {\normalsize \textsc{Journal Articles}}
+\printbibliography[type=article, title=Articles, heading=none,resetnumbers]
+
+\noindent {\normalsize \textsc{Conference Proceedings}}
+\printbibliography[type=inproceedings, title=Conference Proceedings, heading=none, resetnumbers]
+
+\vspace{-1em}
+
+\secHeader{Conferences \& Workshops}
+
+\noindent
+\input{conf_workshops_talks}
+
+\secHeader{Skills}
+
+\noindent
+\input{skills}
+
+\secHeader{Miscellaneous}
+
+\noindent
+\input{misc}
+
+
+
+
+
+
+
+% \secHeader{\emoji{writing-hand-light-skin-tone} \textcolor{red}{R}eferences}
+
+% \noindent
+% \input{references}
+
+\vspace{3em}
+
+% \begin{tikzpicture}
+% \draw[color=black!50, line width=0.5mm] (0,1) -- (0.7\textwidth,1);
+% \end{tikzpicture}
+\hfill 
+Last updated on \today
+
+
+
+
+
+\end{document}
