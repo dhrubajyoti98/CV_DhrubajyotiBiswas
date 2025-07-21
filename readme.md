@@ -6,6 +6,7 @@ A simple template for academic CVs in a single column format using LuaLaTeX. It 
 
 The folder structure of the repository is as follows:
 
+```
 |---readme.md: Details about the template and basic usage information.
 |---main_1c.tex: The main file with basic information.
 +---info
@@ -18,6 +19,7 @@ The folder structure of the repository is as follows:
 +---extras
     |---sign.png: Signature of the candidate.
     |---references.tex: Contains information about the references of the candiate.
+```
 
 The basic file which needs to be updated and compiled is _main.tex_. All the necessary information is to be put in the corresponding .tex files in the _info_ folder. 
 
