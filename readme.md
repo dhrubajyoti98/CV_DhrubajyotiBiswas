@@ -25,6 +25,8 @@ The basic file which needs to be updated and compiled is _main.tex_. All the nec
 
 In certain cases, recruiters and HRs ask for a signed CV and/or a list of references to be included. Those are placed in the _extras_ folder. To use those features, un-comment the relevant sections towards the end in _main.tex_ and update the files in _extras_ accordingly.
 
+The easiest way of using this template is to upload the files to Overleaf.
+
 ## Contact
 
 Dhrubajyoti Biswas, _Email: dhrubajyoti98@gmail.com_, _Web: dhrubajyoti98.github.io_.
