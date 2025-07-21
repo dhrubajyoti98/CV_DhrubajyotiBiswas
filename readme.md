@@ -8,7 +8,7 @@ The folder structure of the repository is as follows:
 
 ```
 |---readme.md: Details about the template and basic usage information.
-|---main_1c.tex: The main file with basic information.
+|---main.tex: The main file with basic information.
 +---info
     |---conf_workshops-talks.tex: Contains information about conferences, workshops attended.
     |---education.tex: Contains information about formal education and degrees earned.
