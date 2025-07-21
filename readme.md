@@ -1,6 +1,6 @@
 # DBiswas-CV
 
-A simple template for academic CVs in a single column format using LuaLaTeX. It is geared towards students pursuing higher education (MSc, PhD etc.), especailly in the basic sciences.
+A simple CV template in a single column format using LuaLaTeX. It is geared towards academics, especailly in the basic sciences.
 
 ## Details
 
