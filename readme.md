@@ -9,13 +9,13 @@ The folder structure of the repository is as follows:
 ```
 |---readme.md: Details about the template and basic usage information.
 |---main.tex: The main file with basic information.
+|---mypapers.bib: Contains the bibentries for papers published.
 +---info
     |---conf_workshops-talks.tex: Contains information about conferences, workshops attended.
     |---education.tex: Contains information about formal education and degrees earned.
     |---experience.tex: Contains information about work experience and/or internships.
     |---skills.tex: Contains information about the acquired skills.
     |---misc.tex: Contains miscellanous information.
-    |---mypapers.bib: Contains the bibentries for papers published.
 +---extras
     |---sign.png: Signature of the candidate.
     |---references.tex: Contains information about the references of the candiate.
