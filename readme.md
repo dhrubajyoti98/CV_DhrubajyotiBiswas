@@ -1,4 +1,4 @@
-# DBiswas-CV
+# DB-CV
 
 A simple CV template in a single column format using LuaLaTeX. It is geared towards academics, especailly in the basic sciences.
 
@@ -24,6 +24,8 @@ The folder structure of the repository is as follows:
 The basic file which needs to be updated and compiled is _main.tex_. All the necessary information is to be put in the corresponding .tex files in the _info_ folder. 
 
 In certain cases, recruiters and HRs ask for a signed CV and/or a list of references to be included. Those are placed in the _extras_ folder. To use those features, un-comment the relevant sections towards the end in _main.tex_ and update the files in _extras_ accordingly.
+
+## Usage
 
 The easiest way of using this template is to upload the files to Overleaf.
 
