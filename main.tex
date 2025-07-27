@@ -5,7 +5,7 @@
 % Please feel free to re-use.                   %
 %-----------------------------------------------%
 
-\documentclass[10pt,a4paper]{article}
+\documentclass[10pt,a4paper]{extarticle}
 \usepackage[verbose]{hyperref}
 \hypersetup{
     colorlinks = true,
@@ -16,8 +16,8 @@
 \usepackage{geometry}
 \geometry{
   a4paper,
-  left=12mm,
-  right=12mm,
+  left=10mm,
+  right=10mm,
   bottom=10mm,
   top=12.5mm
 }
@@ -55,7 +55,7 @@
 }
 
 
-
+\usepackage{worldflags}
 \usepackage{fancyhdr}
 \renewcommand{\headrulewidth}{0pt}
 \pagestyle{fancy}
@@ -66,33 +66,27 @@
 \begin{document}
 
 
-
 \begin{center}
-\LARGE \textsc{Dhrubajyoti Biswas}\normalsize
+\LARGE \textsc{Dhrubajyoti Biswas, PhD.} \normalsize
 
-\vspace{0.35em}
+\vspace{0.1em}
+%------------------------------------------------------%
+Theoretical physicist \big| Interested in dynamical systems, complex networks, \textit{\&} high-performance computing
+\vspace{0.1em}
 
-{Theoretical physicist | Interested in dynamical systems, complex networks, \textit{\&} high-performance computing}
-\vspace{0.3em}
-
-
-\faEnvelope\ \href{mailto:dhrubajyoti98@gmail.com}{dhrubajyoti98@gmail.com}\ |\ 
-\faPhoneSquare\ \href{tel:+919836705913}{+91-9836705913}\ |\ \faGlobe\ \href{https://dhrubajyoti98.github.io}{https://dhrubajyoti98.github.io}\ |\ \faLinkedinSquare\ \href{https://www.linkedin.com/in/dhrubajyoti-biswas/}{dhrubajyoti-biswas}
+%------------------------------------------------------%
+\big[ \faEnvelope\ \href{mailto:dhrubajyoti98@gmail.com}{dhrubajyoti98@gmail.com}\ \big|\ 
+\faPhoneSquare\ \href{tel:+919836705913}{+91-9836705913}\ \big|\ \faExternalLinkSquare\ \href{https://dhrubajyoti98.github.io}{dhrubajyoti98.github.io}\ \big|\ \faLinkedinSquare\ \href{https://www.linkedin.com/in/dhrubajyoti-biswas/}{dhrubajyoti-biswas} \big]
 \end{center}
 
+%------------------------------------------------------%
 \secHeader{Experience}
-
-\noindent
 \input{info/experience}
-
+%------------------------------------------------------%
 
 \secHeader{Education$^{\dagger}$}
-
-\noindent
 \input{info/education}
-
-
-
+%------------------------------------------------------%
 
 \secHeader{Publications}
 \vspace{-0.2em}
@@ -107,27 +101,27 @@
 % \noindent {\normalsize \textsc{Under Preparation/Pre-prints}}
 % \printbibliography[type=unpublished, title=Under Preparation, heading=none, resetnumbers]
 
+
 % \noindent {\normalsize \textsc{Theses}}
 % \printbibliography[type=thesis, title=Thesis, heading=none, resetnumbers]
 
 %\vspace{-1em}
 
-
+%------------------------------------------------------%
 \secHeader{Conferences \& Workshops}
-
 \noindent
 \input{info/conf_workshops_talks}
+%------------------------------------------------------%
 
 \secHeader{Skills}
-
 \noindent
 \input{info/skills}
+%------------------------------------------------------%
 
 \secHeader{Miscellaneous}
-
 \noindent
 \input{info/misc}
-
+%------------------------------------------------------%
 %-----References: uncomment and update extras/references.tex, if needed----%
 % \secHeader{References}
 
@@ -146,7 +140,7 @@
 \vfill
 
 \noindent
-$^{\dagger}$Grades reported as on transcripts/calculated using existing norms. \hfill Last updated on \textit{\today}.
+$^{\dagger}$Scores reported as on transcripts/calculated using existing norms. \hfill Last updated on \textit{\today}.
 
 
 
