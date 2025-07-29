@@ -5,26 +5,17 @@
 % Please feel free to re-use.                   %
 %-----------------------------------------------%
 
-\documentclass[10pt,a4paper]{extarticle}
+\documentclass[10pt,a4paper]{article}
 \usepackage[verbose]{hyperref}
 \hypersetup{
     colorlinks = true,
-    citecolor = blue,
-    linkcolor = blue,
     urlcolor = blue,
 }
-\usepackage{geometry}
-\geometry{
-  a4paper,
-  left=10mm,
-  right=10mm,
-  bottom=10mm,
-  top=12.5mm
-}
+\usepackage[left=10mm,right=10mm,bottom=10mm,top=12.5mm]{geometry}
+
 
 \usepackage{fontawesome}
 \usepackage{academicons}
-\usepackage{orcidlink}
 \usepackage{enumitem}
 \usepackage[dvipsnames]{xcolor}
 \usepackage{array}
@@ -69,10 +60,10 @@
 \begin{center}
 \LARGE \textsc{Dhrubajyoti Biswas, PhD.} \normalsize
 
-\vspace{0.1em}
+\vspace{0.15em}
 %------------------------------------------------------%
 Theoretical physicist \big| Interested in dynamical systems, complex networks, \textit{\&} high-performance computing
-\vspace{0.1em}
+\vspace{0.15em}
 
 %------------------------------------------------------%
 \big[ \faEnvelope\ \href{mailto:dhrubajyoti98@gmail.com}{dhrubajyoti98@gmail.com}\ \big|\ 
@@ -88,7 +79,7 @@ Theoretical physicist \big| Interested in dynamical systems, complex networks, \
 \input{info/education}
 %------------------------------------------------------%
 
-\secHeader{Publications}
+\secHeader{Research Output}
 \vspace{-0.2em}
 
 \nocite{*}
@@ -98,12 +89,12 @@ Theoretical physicist \big| Interested in dynamical systems, complex networks, \
 \noindent {\normalsize \textsc{Conference Proceedings}}
 \printbibliography[type=inproceedings, title=Conference Proceedings, heading=none, resetnumbers]
 
-% \noindent {\normalsize \textsc{Under Preparation/Pre-prints}}
-% \printbibliography[type=unpublished, title=Under Preparation, heading=none, resetnumbers]
-
-
-% \noindent {\normalsize \textsc{Theses}}
-% \printbibliography[type=thesis, title=Thesis, heading=none, resetnumbers]
+\defbibfilter{others}{
+  type=thesis or
+  type=unpublished
+}
+\noindent {\normalsize \textsc{Others}}
+\printbibliography[filter=others, heading=none, resetnumbers]
 
 %\vspace{-1em}
 
@@ -122,6 +113,7 @@ Theoretical physicist \big| Interested in dynamical systems, complex networks, \
 \noindent
 \input{info/misc}
 %------------------------------------------------------%
+
 %-----References: uncomment and update extras/references.tex, if needed----%
 % \secHeader{References}
 
