@@ -1,0 +1,15 @@
+\secHeader{Publications}
+
+\nocite{*}
+\noindent {\normalsize \textsc{Journal Articles.}}
+\printbibliography[type=article, title=Articles, heading=none,resetnumbers]
+
+\noindent {\normalsize \textsc{Conference Proceedings.}}
+\printbibliography[type=inproceedings, title=Conference Proceedings, heading=none, resetnumbers]
+
+\defbibfilter{others}{
+  type=thesis or
+  type=unpublished
+}
+\noindent {\normalsize \textsc{Preprints/Under-Review.}}
+\printbibliography[filter=others, heading=none, resetnumbers]

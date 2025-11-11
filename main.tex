@@ -7,11 +7,8 @@
 
 \documentclass[10pt,a4paper]{article}
 \usepackage[verbose]{hyperref}
-\hypersetup{
-    colorlinks = true,
-    urlcolor = blue,
-}
-\usepackage[left=10mm,right=10mm,bottom=10mm,top=12.5mm]{geometry}
+\hypersetup{colorlinks = true,urlcolor = black}
+\usepackage[left=9.5mm,right=9.5mm,bottom=8mm,top=12.5mm]{geometry}
 
 
 \usepackage{fontawesome}
@@ -41,12 +38,10 @@
 
 \noindent
 \begin{tikzpicture}
-\draw[color=black, line width=0.2mm] (0,1) -- (0.99\textwidth,1);
+\draw[color=black, line width=0.2mm] (0,1) -- (0.993\textwidth,1);
 \end{tikzpicture}}\vspace{0.3em}
 }
 
-
-\usepackage{worldflags}
 \usepackage{fancyhdr}
 \renewcommand{\headrulewidth}{0pt}
 \pagestyle{fancy}
@@ -58,67 +53,34 @@
 
 
 \begin{center}
-\LARGE \textsc{Dhrubajyoti Biswas, PhD.} \normalsize
+\LARGE --- \textsc{Dhrubajyoti Biswas} --- \normalsize
 
 \vspace{0.15em}
 %------------------------------------------------------%
-Theoretical physicist \big| Interested in dynamical systems, complex networks, \textit{\&} high-performance computing
+Theoretical physicist \big| Interested in dynamical systems, complex networks, \textit{\&} computational physics.
 \vspace{0.15em}
 
 %------------------------------------------------------%
 \big[ \faEnvelope\ \href{mailto:dhrubajyoti98@gmail.com}{dhrubajyoti98@gmail.com}\ \big|\ 
-\faPhoneSquare\ \href{tel:+919836705913}{+91-9836705913}\ \big|\ \faExternalLinkSquare\ \href{https://dhrubajyoti98.github.io}{dhrubajyoti98.github.io}\ \big|\ \faLinkedinSquare\ \href{https://www.linkedin.com/in/dhrubajyoti-biswas/}{dhrubajyoti-biswas} \big]
+\faPhoneSquare\ \href{tel:+919836705913}{(+91)-9836705913}\ \big|\ \faExternalLinkSquare\ \href{https://dhrubajyoti98.github.io}{https://dhrubajyoti98.github.io}\ \big|\ \faLinkedinSquare\ \href{https://www.linkedin.com/in/dhrubajyoti98/}{dhrubajyoti98} \big]
 \end{center}
-
 %------------------------------------------------------%
-\secHeader{Experience}
 \input{info/experience}
-%------------------------------------------------------%
 
-\secHeader{Education$^{\dagger}$}
 \input{info/education}
-%------------------------------------------------------%
 
-\secHeader{Publications}
-\vspace{-0.2em}
+\input{info/publications}
 
-\nocite{*}
-\noindent {\normalsize \textsc{Journal Articles}}
-\printbibliography[type=article, title=Articles, heading=none,resetnumbers]
-
-\noindent {\normalsize \textsc{Conference Proceedings}}
-\printbibliography[type=inproceedings, title=Conference Proceedings, heading=none, resetnumbers]
-
-\defbibfilter{others}{
-  type=thesis or
-  type=unpublished
-}
-\noindent {\normalsize \textsc{Under-Review}}
-\printbibliography[filter=others, heading=none, resetnumbers]
-
-%\vspace{-1em}
-
-%------------------------------------------------------%
-\secHeader{Conferences \& Workshops}
-\noindent
 \input{info/conf_workshops_talks}
-%------------------------------------------------------%
 
-\secHeader{Skills}
-\noindent
 \input{info/skills}
-%------------------------------------------------------%
 
-\secHeader{Miscellaneous}
-\noindent
 \input{info/misc}
 %------------------------------------------------------%
 
 %-----References: uncomment and update extras/references.tex, if needed----%
-% \secHeader{References}
 
-% \noindent
-% \input{extras/references}
+%\input{extras/references}
 %------------------------------------------------------------------------- %
 
 %-----Signature: uncomment and update extras/sign.png, if needed----%
@@ -128,11 +90,16 @@ Theoretical physicist \big| Interested in dynamical systems, complex networks, \
 % \noindent
 % \includegraphics[scale=0.1]{extras/sign.png}
 %------------------------------------------------------------------------- %
-
+\begin{center}
+    --- Last updated on \today\ ---
+\end{center}
 \vfill
 
 \noindent
-$^{\dagger}$Scores reported as on transcripts/calculated using existing norms. \hfill Last updated on \textit{\today}.
+$^\ddagger$Not availed.
+
+\noindent
+$^{\dagger}$Scores reported as on transcripts/calculated using existing norms.
 
 
 
