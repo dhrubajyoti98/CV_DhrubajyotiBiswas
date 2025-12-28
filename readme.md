@@ -30,4 +30,4 @@ The easiest way to use this template is to upload the files to Overleaf.
 
 ## Contact
 
-Dhrubajyoti Biswas, _Email: dhrubajyoti98@gmail.com_, _Web: dhrubajyoti98.github.io_.
+Dhrubajyoti Biswas, _Email: dhrubajyoti98@gmail.com_, _Web: https://dhrubajyoti98.github.io_.
